@@ -3,7 +3,8 @@ const Image=()=>{
     return(
         
            <div className={style.imagebox}>
-                <img src="Mirror.jpeg" alt="wrong path" />
+               
+                <img src="" alt="" />
            </div>
         
     )

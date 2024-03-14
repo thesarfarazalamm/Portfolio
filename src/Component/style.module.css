@@ -8,7 +8,7 @@
     height: 4.5rem;
     width: 100%;
     display: flex;
-    background-color: blue;
+    /* background-color: blue; */
     margin-top: 1rem;
     justify-content: center;
 }
@@ -20,13 +20,13 @@
     font-family: 'Jo90in Sans', sans-serif;
     display: flex;
 
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
 }
 
 .Nav>article>.Logo {
     height: 100%;
-    width: 50%;
-    background-color:orange;
+    width: 45%;
+    /* background-color:orange; */
     text-shadow: 1px 0px 2px black;
     display: flex;
     color: rgb(0, 0, 44);
@@ -36,11 +36,26 @@
 
 .Nav>article>.Menu {
     height: 100%;
-    width: 50%;
-    background-color: red;
+    width: 45%;
+    /* background-color: red; */
     
 }
+.Nav>article>.Bar{
+    width: 10%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    font-size: 23px;
+    cursor: pointer;
+    
+    /* position: absolute; */
+    display: none;
+}
+.Nav>article>.Bar>.cross{
+    display: none;
+}
 .Nav>article>.Menu ul {
     height: 4rem;
     display: flex;
@@ -53,6 +68,7 @@
     font-size: medium;
     font-weight: 600;
     color: rgb(83, 83, 83);
+    /* color:white; */
     padding-right: 2rem;
 }
 
@@ -62,6 +78,7 @@
     justify-content: center;
     /* background-color: red; */
     height: 4rem;
+
 }
 
 .Nav>article>.Menu>ul>li:hover {
@@ -75,7 +92,7 @@
 .Nav>article>.Header_contact_btn {
     height: 4rem;
     width: 30%;
-    background-color: green;
+    /* background-color: green; */
 }
 
 /* ************************************ */
@@ -85,6 +102,8 @@
     /* background-color: yellow; */
     display: flex;
     justify-content: center;
+    /* margin-top: 25rem; */
+    
 }
 
 .content>article {
@@ -134,7 +153,7 @@
 }
 
 .content>.midbox>.Bio {
-    width: 45%;
+    width: auto;
     /* background-color: blueviolet; */
 }
 
@@ -204,10 +223,25 @@
 
 
 /* ***************************Image********************** */
+
+
 .content>.midbox>.Image {
-    width: 45%;
+
+    /* width: 45%; */
+    height: 100%;
+    width:100%;
     /* background-color: violet; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+/* .content>.midbox>.Image>.imagecircle{
+    height:22rem;
+    width: 22rem;
+    border-radius: 50%;
+    box-shadow: 0px 1px 1.5rem black;
+
+} */
 
 .imagebox {
     height: 100%;
@@ -216,13 +250,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+   
 
 }
 
 .imagebox>img {
     width: 22rem;
+    height: 22rem;
     border-radius: 50%;
     box-shadow: 0px 1px 1.5rem black;
+    background-image: url("/public/Mirror.jpeg");
+    background-repeat: no-repeat;
+    /* backface-visibility: hidden; */
+    background-size: cover;
 }
 
 #underline {
@@ -246,8 +286,8 @@
 .project {
     margin-top: 1rem;
     padding-bottom: 1rem;
-    height: 86vh;
-    width: 100%;
+    height: auto;
+    width: auto;
     /* background-color: yellow; */
     display: flex;
     justify-content: center;
@@ -266,6 +306,7 @@
 .project>section>.Proj {
     font-size: 3rem;
     font-weight: 600;
+
     /* background-color: wheat; */
 
 }
@@ -328,10 +369,13 @@
 .skillBackground>.divWidth>.Skill {
     /* background-color: pink; */
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
+    /* position: absolute; */
+    margin-top: 1.5rem;
 }
 
 .skillBackground>.divWidth>.fullStack {
@@ -342,9 +386,10 @@
     flex-wrap: wrap;
     align-items: center;
     gap: 3rem;
-    margin-top: 3rem;
+    margin-top: 1.7rem;
     margin-bottom: 3rem;
     /* background-color: chartreuse; */
+    
 }
 
 .skillBackground>.divWidth>.fullStack>.Frontend {
@@ -402,11 +447,12 @@
 .Contact{
     /* height: 85vh; */
     height: auto;
-    width: 100%;
+    /* width: auto; */
     /* background-color: yellow; */
     display: flex;
     color: rgb(22, 22, 22);
     justify-content: center;
+    margin-top: 1rem;
 }
 .Contact>.Contact_box{
     /* height: 88vh; */
@@ -420,10 +466,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 .Contact>.Contact_box>#box{
-    /* height: 90%; */
-    /* width: 30%; */
-    /* background-color:gray;
-     */
+    /* background-color:gray; */
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -464,10 +507,7 @@
     
     
 }
-.Contact>.Contact_box>.RightSideBox{
-   
-   
-}
+
 .Contact>.Contact_box>.RightSideBox>.Contact>form{
     display: flex;
     flex-direction: column;
@@ -514,7 +554,24 @@
 @media only screen and (max-width: 940px){
     .Nav{
         height: auto;
-        background-color: aliceblue;
+        /* background-color: aliceblue; */
+    }
+    .content>.midbox{
+       height: 50rem;
+       width: auto;
+        /* background-color: burlywood; */
+        display: flex;
+        margin-top: 0rem;
+        justify-content: center;
+        align-items: center;
+        /* flex-direction: row-reverse; */
+        flex-direction: column-reverse;
+        
+    }
+    .Social_block{
+        display: flex;
+        flex-direction:row;
+        
     }
     .Nav>article>.Logo{
         width: 100%;
@@ -525,27 +582,57 @@
         
         width: auto; */
     }
+    .Nav>article>.Bar{
+        display: block;
+        flex-direction: column;
+        width: 90%;
+        display: flex;
+        position: absolute;
+        bottom: 83%;
+        justify-content: end;
+        align-items: end;
+      
+    }
+    .Nav>article>.Bar>.navBarButton{
+        z-index: 999;
+        border: 1px solid black;
+        padding: 1px 6px;
+        display: block;
+    }
+    .imagebox>img {
+        height: 15rem;
+        width: 15rem;
+    }
     .Nav>article {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        /* align-items: center; */
        
-        background-color: aqua;
+        /* background-color: aqua; */
         height: auto;
     }
     .Nav>article>.Menu{
         width:100%;
-        /* background-color: green; */
-        display: flex;
+        /* background-color:black; */
         justify-content: center;
+        padding: 1rem;
+        /* display: none; */
+        /* transform: translateX(100%); */
+        transition: all 0.5s linear;
+        /* opacity: 0;
+        visibility: hidden; */
+        pointer-events: none;
+        /* display: none; */
+       
 
     }
     .Nav>article>.Menu ul{
-        display: flex;
-        flex-direction: column-reverse;
+        /* display: flex; */
+        /* background-color: blue; */
+        flex-direction: column;
         margin-top: 10rem;
-
     }
+   
 }
 
 @media only screen and (max-width: 600px) {
@@ -556,6 +643,10 @@
         margin-top:-1rem;
         margin-bottom: -1rem;
     }
+    .content>.midbox{
+        height: 53rem;
+        /* width: auto; */
+    }
     .project>section>.boxes>.project_box{
         /* background-color: yellow; */
         margin: 10px;
@@ -563,5 +654,26 @@
     .Contact>.Contact_box>.RightSideBox>.Contact>form>input{
         width: 16.6rem;
     }
+    .project{
+        height: 184vh;
+    }
+    .Nav>article>.Logo {
+        /* display: none; */
+    }
+    .Contact>.Contact_box{
+        height: 56rem;
+        /* background-color: red; */
+    }
+    .Contact>.Contact_box>.LeftSideBox{
+        position: relative;
+        /* margin-top: 1rem; */
+        /* background-color: yellow; */
+        padding: 1.5rem;
+      }
+      .Contact>.Contact_box>.RightSideBox{
+        /* background-color: blue; */
+        position: relative;
+        bottom: 4.5rem;
+      }
 
   }

@@ -26,14 +26,14 @@ const Nav = () => {
                             
                         </ul>
                     </div>
-                    <div className={style.Bar}  >
+{/*                     <div className={style.Bar}  >
                         <div className={style.navBarButton}>
                             <FontAwesomeIcon icon={faBars} />
                         </div>
                         <div className={style.cross}>
                             <FontAwesomeIcon icon={faXmark}/>
                         </div>
-                    </div>
+                    </div> */}
                     {/* <div className={style.Header_contact_btn}></div> */}
                 </article>
             </section>
